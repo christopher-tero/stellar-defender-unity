@@ -64,8 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player.cs" />
-    <None Include="Assets\Space Shooter Visual Assets\Spritesheet\sheet.xml" />
-    <None Include="Assets\Space Shooter Visual Assets\license.txt" />
+    <None Include="Assets\Z Space Shooter Visual Assets\Spritesheet\sheet.xml" />
+    <None Include="Assets\Z Space Shooter Visual Assets\license.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/christophertero/Development/repos/Unity-2D/Stellar Defender/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
