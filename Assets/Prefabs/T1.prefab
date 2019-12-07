@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 435917325640549993}
   - component: {fileID: 435917325640549994}
   - component: {fileID: 110768835}
+  - component: {fileID: 7681838820817879452}
+  - component: {fileID: 7262841720525070867}
   m_Layer: 0
   m_Name: T1
   m_TagString: Untagged
@@ -92,3 +94,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7110d27758124afe8d8548d4d81aeac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7681838820817879452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435917325640549995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8676f24c1d854676b0094e25ca433a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!60 &7262841720525070867
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435917325640549995}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.93, y: 0.84}
+    newSize: {x: 0.93, y: 0.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.155, y: -0.12}
+      - {x: 0.155, y: -0.14}
+      - {x: 0.145, y: -0.14999999}
+      - {x: 0.13499999, y: -0.21}
+      - {x: 0.14074025, y: -0.23285185}
+      - {x: 0.10644413, y: -0.35855576}
+      - {x: 0.152148, y: -0.37425977}
+      - {x: 0.22503638, y: -0.41285193}
+      - {x: 0.24640775, y: -0.42}
+      - {x: 0.33499998, y: -0.20422325}
+      - {x: 0.465, y: 0.16862857}
+      - {x: 0.40066752, y: 0.2528885}
+      - {x: 0.32785198, y: 0.37855572}
+      - {x: 0.29640788, y: 0.42}
+      - {x: 0.225, y: 0.38425964}
+      - {x: 0.095, y: 0.32996383}
+      - {x: 0.0035194904, y: 0.22563133}
+      - {x: -0.08818425, y: 0.32142317}
+      - {x: -0.18640774, y: 0.37711173}
+      - {x: -0.29211167, y: 0.43429607}
+      - {x: -0.37922332, y: 0.29862857}
+      - {x: -0.465, y: 0.16581292}
+      - {x: -0.25640774, y: -0.4342962}
+      - {x: -0.14355586, y: -0.3914077}
+      - {x: -0.099259734, y: -0.3599637}
+      - {x: -0.16077662, y: -0.17270641}
+      - {x: 0.13929613, y: -0.16855587}
+      - {x: 0.145, y: -0.16}
