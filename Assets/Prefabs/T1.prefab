@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 110768835}
   - component: {fileID: 7681838820817879452}
   - component: {fileID: 7262841720525070867}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: T1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,6 +112,7 @@ MonoBehaviour:
   maxTimeBetweenShots: 5
   projectile: {fileID: 2022535252368297932, guid: 7af73bc99a90c4e629afb8a92b44821c,
     type: 3}
+  projectileSpeed: 5
 --- !u!60 &7262841720525070867
 PolygonCollider2D:
   m_ObjectHideFlags: 0
