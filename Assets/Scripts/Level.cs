@@ -14,8 +14,8 @@ public class Level : MonoBehaviour
 
     public void LoadGame()
     {
-        Debug.Log("Clicked");
         SceneManager.LoadScene("Game");
+        FindObjectOfType<GameSession>().ResetGame();
     }
 
     IEnumerator WaitAndLoad()

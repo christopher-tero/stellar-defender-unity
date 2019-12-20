@@ -117,6 +117,7 @@ MonoBehaviour:
   deathExplosionTime: 1
   enemyDeathSFX: {fileID: 8300000, guid: 9b40a0d80de62427e80db6b1b7af28cf, type: 3}
   enemyDeathSFXVolume: 0.7
+  scoreValue: 300
   projectile: {fileID: 2022535252368297932, guid: 7af73bc99a90c4e629afb8a92b44821c,
     type: 3}
   projectileSpeed: 5
