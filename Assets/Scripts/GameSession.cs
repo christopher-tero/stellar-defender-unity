@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameSession : MonoBehaviour
 {
     int score = 0;
+    int health = 200;
 
     private void Awake()
     {
@@ -29,9 +30,19 @@ public class GameSession : MonoBehaviour
         return score;
     }
 
+    public int GetHealth()
+    {
+        return health;
+    }
+
     public void AddToScore(int scoreValue)
     {
         score += scoreValue;
+    }
+
+    public void DetractFromHealth(int healthValue)
+    {
+        health -= healthValue;
     }
 
     public void ResetGame()

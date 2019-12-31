@@ -52,6 +52,16 @@ public class Player : MonoBehaviour
         HitManager(damageDealer);
     }
 
+    public int GetHealth()
+    {
+        return health;
+    }
+
+    public void DetractFromHealth(int healthValue)
+    {
+        health -= healthValue;
+    }
+
     private void HitManager(DamageDealer damageDealer)
     {
         health -= damageDealer.GetDamage();
