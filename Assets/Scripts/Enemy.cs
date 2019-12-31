@@ -5,8 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("Enemy")]
+    float shotCounter;
     [SerializeField] float health = 100;
-    [SerializeField] float shotCounter;
     [SerializeField] float minTimeBetweenShots = .5f;
     [SerializeField] float maxTimeBetweenShots = 5f;
     [SerializeField] GameObject deathVFX;
