@@ -122,6 +122,10 @@ MonoBehaviour:
   projectileSpeed: 2
   laserSound: {fileID: 8300000, guid: 03de34d0d3a2b4765a9e0df71d44d976, type: 3}
   laserSoundVolume: 0.4
+  dropChance: 50
+  bonusItem: {fileID: 2022535252368297932, guid: c935bfa3b36224e23bdfba1c157074dd,
+    type: 3}
+  bonusItemSpeed: 2
 --- !u!60 &6648544726619120290
 PolygonCollider2D:
   m_ObjectHideFlags: 0

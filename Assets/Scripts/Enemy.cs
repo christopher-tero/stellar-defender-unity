@@ -21,6 +21,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] AudioClip laserSound;
     [SerializeField] [Range(0, 1)] float laserSoundVolume = 0.7f;
 
+    [Header("Enemy Drops")]
+    [SerializeField] int dropChance = 10;
+    [SerializeField] GameObject bonusItem;
+    [SerializeField] float bonusItemSpeed = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -73,10 +77,21 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        DropItem();
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
         Destroy(gameObject);
         GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(explosion, deathExplosionTime);
         AudioSource.PlayClipAtPoint(enemyDeathSFX, Camera.main.transform.position, enemyDeathSFXVolume);
+    }
+
+    private void DropItem()
+    {
+        int dropRandom = Random.Range(0, 100);
+        if (dropRandom < dropChance)
+        {
+            GameObject createBonusItem = Instantiate(bonusItem, transform.position, Quaternion.identity) as GameObject;
+            createBonusItem.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -bonusItemSpeed);
+        }
     }
 }

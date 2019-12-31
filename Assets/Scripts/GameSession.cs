@@ -30,19 +30,9 @@ public class GameSession : MonoBehaviour
         return score;
     }
 
-    public int GetHealth()
-    {
-        return health;
-    }
-
     public void AddToScore(int scoreValue)
     {
         score += scoreValue;
-    }
-
-    public void DetractFromHealth(int healthValue)
-    {
-        health -= healthValue;
     }
 
     public void ResetGame()
